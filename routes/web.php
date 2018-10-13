@@ -15,13 +15,15 @@
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin.index', ['as'=>'admin', 'middleware'=>'role:administrador','uses'=> function(){
+Route::get('/admin', ['as'=>'admin', 'middleware'=>'role:administrador','uses'=> function(){
     return view ('admin.index');
 }
 ]);
 
 Route::resource ('role', 'RoleController');
-Route::resource ('user', 'UserController');
+Route::resource ('user', 'UserController', ['only' => [
+    'index', 'update'
+]]);
 
 Route::get('/home/cadastro-cliente', 'HomeController@cadastro_cliente')->name('cadastro-cliente');
 

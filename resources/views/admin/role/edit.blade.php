@@ -1,9 +1,5 @@
-@extends('layout.app')
+@extends('adminLayout.app')
 @section('content')
-<h3>Edit Roles</h3>
-<nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{route('admin')}}">Voltar</a>
-</nav>
 <form action="{{route('role.update', $role->id)}}" method="post" role="form">
     {{method_field('PATCH')}}
     {{csrf_field()}}

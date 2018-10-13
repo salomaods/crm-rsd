@@ -1,10 +1,6 @@
-@extends('layout.app')
-
+@extends('adminLayout.app')
 @section('content')
-<h3>User Roles</h3>
-<nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="">Criar</a>
-</nav>
+
 <table class = "table table-bordered">
     <tr> 
             <th> Name: </th>

@@ -52,7 +52,7 @@ class UserController extends Controller
         
         $users = User::all();
         $allRoles = Role::all();
-        return view('admin.role.user', compact(['users','allRoles']));
+        return redirect()->route('user.index')->withMessage('função criada');
     }
 
 

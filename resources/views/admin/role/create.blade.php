@@ -1,6 +1,5 @@
-@extends('layout.app')
+@extends('adminLayout.app')
 @section('content')
-    <h3>Create Roles</h3>
     <form action="{{route('role.store')}}" method="post" role="form">
         {{csrf_field()}}
         <div class="form-group">
