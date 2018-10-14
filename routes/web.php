@@ -25,7 +25,7 @@ Route::resource ('user', 'UserController', ['only' => [
     'index', 'update'
 ]]);
 
-Route::get('/home/cadastro-cliente', 'HomeController@cadastro_cliente')->name('cadastro-cliente');
+Route::resource('client', 'ClientController');
 
 Route::get('/logout', function(){
     Auth::logout();

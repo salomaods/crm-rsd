@@ -29,12 +29,19 @@
         </nav>
 			</nav>
 	<div class="container">
-        <nav class="navbar navbar-light">
-                <a class="navbar-brand" href="{{route('role.index')}}">Permissão</a>
-                <a class="navbar-brand" href="{{route('role.create')}}">Criar Permissão</a>
-                <a class="navbar-brand" href="{{route('user.index')}}">Editar Usuário</a>
-            
-        </nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="{{route('role.index')}}">Menu Funções</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-item nav-link active" href="{{route('role.create')}}">Criar <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link active" href="{{route('user.index')}}">Usuários</a>
+					<a class="nav-item nav-link active" href="{{route('client.index')}}">Clientes</a>
+				  </div>
+				</div>
+		</nav>
 	@yield("content")
 		
 

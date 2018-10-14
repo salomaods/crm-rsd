@@ -31,7 +31,7 @@
           @role('administrador')
           <a class="btn btn-primary false m-2 w-50" href="{{route('admin')}}">Painel Administrador<br></a>
           @endrole
-          <a class="btn btn-primary false m-2 w-50" href="{{route('cadastro-cliente')}}">Cadastro de Clientes<br></a>
+          <a class="btn btn-primary false m-2 w-50" href="{{route('client.index')}}">Cadastro de Clientes<br></a>
           <a class="btn btn-primary false m-2 w-50" href="#">Consultar Cliente<br></a>
           @role('gestor')
           <a class="btn btn-primary false m-2 w-50" href="#">Desvincular Cliente<br></a>

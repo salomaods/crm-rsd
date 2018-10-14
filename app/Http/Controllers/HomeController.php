@@ -27,10 +27,4 @@ class HomeController extends Controller
         $user = Auth::user();
         return view('home', compact('user'));
     }
-
-    public function cadastro_cliente()
-    {
-        $user = Auth::user();
-            return view('cadastro-cliente', compact('user'));
-    }
 }
